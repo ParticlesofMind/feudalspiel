@@ -3,6 +3,7 @@ import { getRoleById } from '../data/roles';
 import { getAchievementById } from '../data/achievements';
 import { getTotalChapters } from '../data/scenarios';
 import { Stats } from '../types';
+import { hydrateRoleImages } from '../utils/roleImages';
 
 export function renderProfilePage(): string {
   const { profile } = getState();
@@ -11,6 +12,9 @@ export function renderProfilePage(): string {
   const role = getRoleById(profile.roleId);
   const totalChapters = getTotalChapters(profile.roleId);
   const progress = Math.min(100, ((profile.currentChapter - 1) / totalChapters) * 100);
+
+  const roleId = role?.id || profile.roleId;
+  const roleAlt = role?.imageAlt || 'Rollenbild';
 
   return `
     <div class="min-h-screen parchment-bg">
@@ -31,6 +35,14 @@ export function renderProfilePage(): string {
           <div class="flex flex-col md:flex-row gap-6">
             <!-- Avatar area -->
             <div class="flex-shrink-0 text-center">
+              <img
+                class="role-image role-image--profile"
+                data-role-image="${roleId}"
+                data-image-width="480"
+                alt="${roleAlt}"
+                loading="lazy"
+                decoding="async"
+              />
               <h2 class="font-heading text-2xl text-ink mt-3">${profile.name}</h2>
               <span class="badge mt-1">${role?.name || ''}</span>
               <p class="text-sm text-stone mt-1">${role?.socialClass || ''}</p>
@@ -194,4 +206,6 @@ export function attachProfileListeners() {
       document.getElementById(`tab-${tabId}`)?.classList.remove('hidden');
     });
   });
+
+  hydrateRoleImages();
 }

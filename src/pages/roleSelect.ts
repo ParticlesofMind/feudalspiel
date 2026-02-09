@@ -1,5 +1,6 @@
 import { roles } from '../data/roles';
 import { navigateTo } from '../store';
+import { hydrateRoleImages } from '../utils/roleImages';
 
 let selectedRoleId: string | null = null;
 
@@ -21,6 +22,14 @@ export function renderRoleSelectPage(): string {
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           ${roles.map((role, i) => `
             <div class="medieval-card cursor-pointer role-card animate-fadeIn" data-role="${role.id}" style="animation-delay: ${0.1 * i}s">
+              <img
+                class="role-image"
+                data-role-image="${role.id}"
+                data-image-width="640"
+                alt="${role.imageAlt}"
+                loading="lazy"
+                decoding="async"
+              />
               <div class="p-5">
                 <div class="flex items-center justify-between mb-2">
                   <h3 class="font-heading text-xl font-bold text-ink">${role.name}</h3>
@@ -131,6 +140,8 @@ export function attachRoleSelectListeners() {
   document.getElementById('input-name')?.addEventListener('keydown', (e) => {
     if ((e as KeyboardEvent).key === 'Enter') startGame();
   });
+
+  hydrateRoleImages();
 }
 
 function startGame() {

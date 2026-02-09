@@ -5,6 +5,8 @@ export interface Role {
   name: string;
   description: string;
   longDescription: string;
+  imageFileName: string;
+  imageAlt: string;
   stats: Stats;
   startingItems: string[];
   socialClass: string;
