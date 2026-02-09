@@ -2,7 +2,7 @@
 
 /* ===== Medieval Theme Custom Styles ===== */
 
-@theme {
+:root {
   --font-heading: 'Cinzel', serif;
   --font-body: 'Crimson Text', serif;
   --color-parchment: #f5e6c8;
