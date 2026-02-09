@@ -256,7 +256,15 @@ export function attachScenarioListeners() {
 
       // Next button
       document.getElementById('btn-next')?.addEventListener('click', () => {
-        navigateTo('scenario');
+        const latest = getState().profile;
+        if (!latest) return;
+
+        const chapters = getTotalChapters(latest.roleId);
+        if (latest.currentChapter > chapters) {
+          navigateTo('summary');
+        } else {
+          navigateTo('scenario');
+        }
       });
     });
   });

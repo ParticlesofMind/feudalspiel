@@ -11,33 +11,44 @@ const app = document.getElementById('app')!;
 
 function render() {
   const state = getState();
+  const page = state.currentPage;
+  let html = '';
+  let attach: (() => void) | null = null;
 
-  switch (state.currentPage) {
+  switch (page) {
     case 'intro':
-      app.innerHTML = renderIntroPage();
-      attachIntroListeners();
+      html = renderIntroPage();
+      attach = attachIntroListeners;
       break;
     case 'roleSelect':
-      app.innerHTML = renderRoleSelectPage();
-      attachRoleSelectListeners();
+      html = renderRoleSelectPage();
+      attach = attachRoleSelectListeners;
       break;
     case 'scenario':
-      app.innerHTML = renderScenarioPage();
-      attachScenarioListeners();
+      html = renderScenarioPage();
+      attach = attachScenarioListeners;
       break;
     case 'profile':
-      app.innerHTML = renderProfilePage();
-      attachProfileListeners();
+      html = renderProfilePage();
+      attach = attachProfileListeners;
       break;
     case 'glossary':
-      app.innerHTML = renderGlossaryPage();
-      attachGlossaryListeners();
+      html = renderGlossaryPage();
+      attach = attachGlossaryListeners;
       break;
     case 'summary':
-      app.innerHTML = renderSummaryPage();
-      attachSummaryListeners();
+      html = renderSummaryPage();
+      attach = attachSummaryListeners;
       break;
   }
+
+  if (getState().currentPage !== page) {
+    render();
+    return;
+  }
+
+  app.innerHTML = html;
+  attach?.();
 
   // Scroll to top on page change
   window.scrollTo({ top: 0, behavior: 'smooth' });
