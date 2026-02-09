@@ -22,15 +22,6 @@ export function renderIntroPage(): string {
       <!-- Main Content -->
       <main class="flex-1 max-w-3xl mx-auto px-4 pb-16">
         <div class="medieval-card p-6 md:p-10 animate-fadeIn" style="animation-delay: 0.2s">
-          <!-- Intro Image -->
-          <div class="mb-6 rounded-lg overflow-hidden border-2 border-gold">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Nuremberg_chronicles_-_NORIMBERGA.png/600px-Nuremberg_chronicles_-_NORIMBERGA.png"
-              alt="Mittelalterliche Stadt aus der Schedelschen Weltchronik"
-              class="w-full h-48 md:h-64 object-cover"
-            />
-          </div>
-
           <h2 class="font-heading text-2xl md:text-3xl text-center text-ink mb-6">
             Willkommen im Heiligen Römischen Reich!
           </h2>

@@ -21,12 +21,6 @@ export function renderRoleSelectPage(): string {
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           ${roles.map((role, i) => `
             <div class="medieval-card cursor-pointer role-card animate-fadeIn" data-role="${role.id}" style="animation-delay: ${0.1 * i}s">
-              <img
-                src="${role.imageUrl}"
-                alt="${role.name}"
-                class="role-image"
-                onerror="this.style.display='none'"
-              />
               <div class="p-5">
                 <div class="flex items-center justify-between mb-2">
                   <h3 class="font-heading text-xl font-bold text-ink">${role.name}</h3>

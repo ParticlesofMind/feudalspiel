@@ -31,12 +31,6 @@ export function renderProfilePage(): string {
           <div class="flex flex-col md:flex-row gap-6">
             <!-- Avatar area -->
             <div class="flex-shrink-0 text-center">
-              <img
-                src="${role?.imageUrl || ''}"
-                alt="${role?.name || ''}"
-                class="w-32 h-32 object-cover rounded-lg border-2 border-gold mx-auto"
-                onerror="this.style.display='none'"
-              />
               <h2 class="font-heading text-2xl text-ink mt-3">${profile.name}</h2>
               <span class="badge mt-1">${role?.name || ''}</span>
               <p class="text-sm text-stone mt-1">${role?.socialClass || ''}</p>

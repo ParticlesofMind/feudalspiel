@@ -64,14 +64,6 @@ export function renderScenarioPage(): string {
             <p class="font-heading text-sm text-stone uppercase tracking-widest mt-1">Kapitel ${scenario.chapter}</p>
           </div>
 
-          <!-- Scenario Image -->
-          <img
-            src="${scenario.imageUrl}"
-            alt="${scenario.title}"
-            class="scenario-image mb-6"
-            onerror="this.style.display='none'"
-          />
-
           <!-- Story Text -->
           <div class="medieval-card p-6 md:p-8 mb-8">
             <p class="text-lg leading-relaxed text-ink-light">${scenario.description}</p>
