@@ -12,13 +12,27 @@ export function renderScenarioPage(): string {
   // Check if game is complete
   if (profile.currentChapter > totalChapters) {
     navigateTo('summary');
-    return '';
+    return `
+      <div class="min-h-screen parchment-bg flex items-center justify-center px-4">
+        <div class="medieval-card p-6 text-center animate-fadeIn">
+          <h1 class="font-heading text-2xl text-ink mb-2">Reise beendet</h1>
+          <p class="text-ink-light">Weiterleitung zur Zusammenfassung…</p>
+        </div>
+      </div>
+    `;
   }
 
   const scenario = getScenario(profile.roleId, profile.currentChapter);
   if (!scenario) {
     navigateTo('summary');
-    return '';
+    return `
+      <div class="min-h-screen parchment-bg flex items-center justify-center px-4">
+        <div class="medieval-card p-6 text-center animate-fadeIn">
+          <h1 class="font-heading text-2xl text-ink mb-2">Kapitel beendet</h1>
+          <p class="text-ink-light">Weiterleitung zur Zusammenfassung…</p>
+        </div>
+      </div>
+    `;
   }
 
   const role = getRoleById(profile.roleId);
@@ -162,8 +176,17 @@ export function attachScenarioListeners() {
   const { profile } = getState();
   if (!profile) return;
 
+  const totalChapters = getTotalChapters(profile.roleId);
+  if (profile.currentChapter > totalChapters) {
+    navigateTo('summary');
+    return;
+  }
+
   const scenario = getScenario(profile.roleId, profile.currentChapter);
-  if (!scenario) return;
+  if (!scenario) {
+    navigateTo('summary');
+    return;
+  }
 
   // Navigate buttons
   document.getElementById('btn-profile')?.addEventListener('click', () => navigateTo('profile'));
