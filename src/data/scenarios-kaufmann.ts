@@ -7,7 +7,6 @@ export const kaufmannScenarios: Scenario[] = [
     chapter: 1,
     title: 'Die erste Handelsreise',
     description: 'Du bist ein junger Kaufmann und planst deine erste große Handelsreise. Du hast Geld gespart und willst Waren kaufen, um sie in einer anderen Stadt teurer zu verkaufen. Aber welche Route wählst du? Die Straße durch den Wald ist kürzer, aber gefährlich. Die Straße über die Berge ist sicherer, aber dauert länger.',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Kodex_Manesse_Reinmar_der_Alte.jpg/300px-Kodex_Manesse_Reinmar_der_Alte.jpg',
     choices: [
       {
         text: 'Du nimmst die kurze Straße durch den Wald und sparst Zeit.',
@@ -49,7 +48,6 @@ export const kaufmannScenarios: Scenario[] = [
     chapter: 2,
     title: 'Auf der Messe',
     description: 'Du bist auf der großen Messe in Frankfurt angekommen! Hunderte Kaufleute aus ganz Europa sind hier. Gewürze aus dem Orient, Tuche aus Flandern, Wein aus dem Rheinland—alles wird hier gehandelt. Du hast Geld und willst investieren. Was kaufst du?',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/AntoninusVia_MesseFrankfurt.jpg/350px-AntoninusVia_MesseFrankfurt.jpg',
     choices: [
       {
         text: 'Du kaufst teure Gewürze—Pfeffer, Zimt und Safran.',
@@ -91,7 +89,6 @@ export const kaufmannScenarios: Scenario[] = [
     chapter: 3,
     title: 'Der Geldwechsler',
     description: 'Du hast Waren in verschiedenen Städten verkauft und hast jetzt Münzen aus vielen Regionen: Gulden, Taler, Groschen, Pfennige. Jede Stadt und jedes Fürstentum hat andere Münzen! Ein Geldwechsler bietet dir an, alles in eine Währung umzutauschen—gegen eine Gebühr natürlich.',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Quentin_Matsys_-_The_Moneylender_and_his_Wife_-_WGA14281.jpg/350px-Quentin_Matsys_-_The_Moneylender_and_his_Wife_-_WGA14281.jpg',
     choices: [
       {
         text: 'Du nutzt den Geldwechsler und tauschst alles in Gulden um.',
@@ -133,7 +130,6 @@ export const kaufmannScenarios: Scenario[] = [
     chapter: 4,
     title: 'Räuber auf der Straße',
     description: 'Auf dem Rückweg von einer Handelsreise wirst du von Räubern überfallen! Eine Gruppe bewaffneter Männer blockiert den Weg. Dein Pferd ist mit Waren beladen. Die Räuber fordern alles. Was tust du?',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Battle_on_a_Bridge_%28Landscape_with_the_Flight_into_Egypt%29_%E2%80%93_Joos_de_Momper.jpg/400px-Battle_on_a_Bridge_%28Landscape_with_the_Flight_into_Egypt%29_%E2%80%93_Joos_de_Momper.jpg',
     choices: [
       {
         text: 'Du verhandelst mit den Räubern und bietest ihnen einen Teil deiner Waren an.',
@@ -175,7 +171,6 @@ export const kaufmannScenarios: Scenario[] = [
     chapter: 5,
     title: 'Das Handelskontor',
     description: 'Dein Geschäft wächst! Du willst ein Handelskontor eröffnen—ein festes Büro in einer großen Handelsstadt. Nürnberg, Augsburg oder Lübeck? Jede Stadt hat Vor- und Nachteile. Wo baust du dein Geschäft auf?',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Nuremberg_chronicles_-_Nuremberga.png/400px-Nuremberg_chronicles_-_Nuremberga.png',
     choices: [
       {
         text: 'Nürnberg—die Kreuzung aller Handelswege!',

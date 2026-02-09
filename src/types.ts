@@ -5,7 +5,6 @@ export interface Role {
   name: string;
   description: string;
   longDescription: string;
-  imageUrl: string;
   stats: Stats;
   startingItems: string[];
   socialClass: string;
@@ -34,7 +33,6 @@ export interface Scenario {
   chapter: number;
   title: string;
   description: string;
-  imageUrl: string;
   choices: Choice[];
   category: ContentCategory;
 }

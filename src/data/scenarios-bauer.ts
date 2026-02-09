@@ -7,7 +7,6 @@ export const bauerScenarios: Scenario[] = [
     chapter: 1,
     title: 'Der Morgen auf dem Feld',
     description: 'Es ist früher Morgen im Dorf. Die Sonne geht gerade auf und du stehst vor deinem kleinen Haus aus Holz und Lehm. Heute ist ein wichtiger Tag: Der Grundherr hat befohlen, dass der Zehnte—ein Zehntel der Ernte—bald abgeliefert werden muss. Aber dein Nachbar ist krank und kann seine Felder nicht bestellen. Was tust du?',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_juin.jpg/300px-Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_juin.jpg',
     choices: [
       {
         text: 'Du hilfst deinem Nachbarn zuerst und kümmerst dich dann um deine eigenen Felder.',
@@ -49,7 +48,6 @@ export const bauerScenarios: Scenario[] = [
     chapter: 2,
     title: 'Der Markttag',
     description: 'Endlich ist Markttag in der nächsten Stadt! Du darfst mit deiner übrigen Ernte—Gemüse, Eier und etwas Käse—zum Markt gehen. Die Stadt ist laut und aufregend. Überall sind Händler, Handwerker und Bürger. Ein Kaufmann bietet dir einen guten Preis für alle deine Waren auf einmal. Aber du könntest auch versuchen, einzeln zu verkaufen.',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Pieter_Aertsen_-_Market_Scene_-_WGA00068.jpg/400px-Pieter_Aertsen_-_Market_Scene_-_WGA00068.jpg',
     choices: [
       {
         text: 'Du verkaufst alles an den Kaufmann. Schnell und sicher!',
@@ -91,7 +89,6 @@ export const bauerScenarios: Scenario[] = [
     chapter: 3,
     title: 'Das Erntedankfest',
     description: 'Die Ernte ist eingebracht und das Dorf feiert! Es gibt Musik, Tanz und gutes Essen. Der Grundherr hat sogar ein Fass Bier geschickt. Aber plötzlich kommt ein Bote mit einer Nachricht: Der Grundherr verlangt zusätzliche Arbeitstage auf seinen Feldern—die sogenannte Fron. Die Stimmung im Dorf kippt.',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Pieter_Bruegel_the_Elder_-_Peasant_Wedding_-_Google_Art_Project_2.jpg/400px-Pieter_Bruegel_the_Elder_-_Peasant_Wedding_-_Google_Art_Project_2.jpg',
     choices: [
       {
         text: 'Du akzeptierst die Fron ohne zu klagen. Der Grundherr ist mächtig.',
@@ -133,7 +130,6 @@ export const bauerScenarios: Scenario[] = [
     chapter: 4,
     title: 'Der strenge Winter',
     description: 'Der Winter ist gekommen und er ist streng. Der Schnee liegt hoch und die Vorräte werden knapp. Deine Familie friert und hat Hunger. Ein reisender Händler bietet dir Getreide an—aber zu einem sehr hohen Preis. Im Wald gibt es Wild, aber die Jagd ist den Bauern verboten. Nur der Adel darf jagen.',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_f%C3%A9vrier.jpg/300px-Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_f%C3%A9vrier.jpg',
     choices: [
       {
         text: 'Du kaufst das teure Getreide vom Händler.',
@@ -175,7 +171,6 @@ export const bauerScenarios: Scenario[] = [
     chapter: 5,
     title: 'Die Entscheidung',
     description: 'Der Frühling ist da und mit ihm eine große Nachricht: Der Grundherr sucht Arbeiter für den Bau einer neuen Kirche in der Stadt. Wer mitarbeitet, bekommt bessere Bedingungen und vielleicht sogar die Freiheit von der Leibeigenschaft. Aber du müsstest dein Dorf verlassen. Deine Familie und Freunde sind hier.',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Cathbuilding.jpg/300px-Cathbuilding.jpg',
     choices: [
       {
         text: 'Du gehst in die Stadt und arbeitest am Kirchenbau.',

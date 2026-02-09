@@ -7,7 +7,6 @@ export const adligerScenarios: Scenario[] = [
     chapter: 1,
     title: 'Die Herrschaft beginnt',
     description: 'Dein Vater ist gestorben und du erbst eine Burg, drei Dörfer und die Herrschaft über zweihundert Untertanen. Die Burg ist alt und braucht Reparaturen. Die Bauern erwarten einen gerechten Herrn. Dein erster Befehl als neuer Herr ist wichtig. Was tust du zuerst?',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Burg_Eltz_HDR.jpg/400px-Burg_Eltz_HDR.jpg',
     choices: [
       {
         text: 'Du lässt die Burg reparieren und verstärken.',
@@ -49,7 +48,6 @@ export const adligerScenarios: Scenario[] = [
     chapter: 2,
     title: 'Die Heiratspolitik',
     description: 'In deiner Position ist eine Heirat nicht nur eine persönliche Entscheidung—sie ist Politik! Drei Familien haben Interesse an einer Verbindung mit dir gezeigt. Jede Heirat bringt andere Vorteile. Für wen entscheidest du dich?',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Die_Gartenlaube_%281887%29_b_261.jpg/300px-Die_Gartenlaube_%281887%29_b_261.jpg',
     choices: [
       {
         text: 'Die Tochter eines reichen Kaufmanns—sie bringt eine große Mitgift.',
@@ -91,7 +89,6 @@ export const adligerScenarios: Scenario[] = [
     chapter: 3,
     title: 'Der Reichstag',
     description: 'Du wirst zum Reichstag eingeladen—die große Versammlung der Fürsten, Bischöfe und Städte des Heiligen Römischen Reiches! Der Kaiser will über Krieg und Steuern beraten. Du reist nach Worms, wo der Reichstag stattfindet. Prächtig gekleidete Adlige aus dem ganzen Reich sind dort.',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/A_New_and_Compleat_Map_of_the_Roman_Empire.jpg/400px-A_New_and_Compleat_Map_of_the_Roman_Empire.jpg',
     choices: [
       {
         text: 'Du unterstützt den Kaiser und stimmst für seine Steuerpläne.',
@@ -133,7 +130,6 @@ export const adligerScenarios: Scenario[] = [
     chapter: 4,
     title: 'Die Bauernklage',
     description: 'Eine Gruppe Bauern aus deinem Dorf kommt zur Burg. Sie klagen über zu hohe Abgaben, schlechte Ernten und die Willkür deines Vogts—des Mannes, der in deinem Namen das Dorf verwaltet. Sie bitten dich um Gerechtigkeit. Dein Vogt aber sagt, die Bauern seien faul und widerspenstig.',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Bundesarchiv_Bild_183-R52907%2C_Illustration%2C_Bauernkrieg.jpg/300px-Bundesarchiv_Bild_183-R52907%2C_Illustration%2C_Bauernkrieg.jpg',
     choices: [
       {
         text: 'Du hörst beide Seiten an und untersuchst die Lage persönlich.',
@@ -175,7 +171,6 @@ export const adligerScenarios: Scenario[] = [
     chapter: 5,
     title: 'Das Erbe des Adligen',
     description: 'Du blickst auf dein Leben zurück. Du hast regiert, Entscheidungen getroffen und die Welt ein Stück verändert. Nun musst du entscheiden, wie du dein Erbe weitergibst und was du der Nachwelt hinterlässt.',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Emperor_Henry_IV_HRE.jpg/300px-Emperor_Henry_IV_HRE.jpg',
     choices: [
       {
         text: 'Du schreibst ein Gesetzbuch für deine Herrschaft—klare und gerechte Regeln für alle.',

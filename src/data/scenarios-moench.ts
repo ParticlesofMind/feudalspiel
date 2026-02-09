@@ -7,7 +7,6 @@ export const moenchScenarios: Scenario[] = [
     chapter: 1,
     title: 'Das Leben im Kloster',
     description: 'Du bist neu im Kloster und lernst die strenge Tagesordnung kennen. Um vier Uhr morgens beginnt der Tag mit dem ersten Gebet. Dann folgen Arbeit, Studium und weitere Gebete. Der Abt erklärt dir: Jeder Mönch muss eine Aufgabe wählen. Welche Aufgabe interessiert dich?',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Escribano.jpg/300px-Escribano.jpg',
     choices: [
       {
         text: 'Du arbeitest im Skriptorium und kopierst alte Bücher.',
@@ -49,7 +48,6 @@ export const moenchScenarios: Scenario[] = [
     chapter: 2,
     title: 'Das verbotene Buch',
     description: 'Beim Aufräumen der Bibliothek findest du ein altes Buch, das in einer fremden Sprache geschrieben ist. Es enthält Zeichnungen von Sternen, Planeten und mathematischen Formeln. Es scheint ein arabisches Buch über Astronomie zu sein. Solche Bücher sind im Kloster nicht gern gesehen.',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Meister_des_Codex_Manesse.jpg/300px-Meister_des_Codex_Manesse.jpg',
     choices: [
       {
         text: 'Du liest das Buch heimlich und versuchst, die Sprache zu verstehen.',
@@ -91,7 +89,6 @@ export const moenchScenarios: Scenario[] = [
     chapter: 3,
     title: 'Die Pest kommt',
     description: 'Schreckliche Nachrichten: Die Pest breitet sich aus! In den umliegenden Dörfern sterben Menschen. Kranke klopfen an die Klosterpforte und bitten um Hilfe. Einige Mönche haben Angst und wollen die Tore schließen. Was rätst du dem Abt?',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Doutielt_1.jpg/300px-Doutielt_1.jpg',
     choices: [
       {
         text: 'Öffnet die Tore und helft den Kranken!',
@@ -133,7 +130,6 @@ export const moenchScenarios: Scenario[] = [
     chapter: 4,
     title: 'Die Schule des Klosters',
     description: 'Der Abt möchte eine Klosterschule gründen, in der auch Kinder aus dem Dorf lernen können. Bisher war Bildung nur für den Adel und den Klerus. Einige Mönche sind dagegen. Du sollst die Schule leiten. Was willst du unterrichten?',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Laurentius_de_Voltolina_001.jpg/300px-Laurentius_de_Voltolina_001.jpg',
     choices: [
       {
         text: 'Lesen, Schreiben und Rechnen—die Grundlagen für alle Kinder!',
@@ -175,7 +171,6 @@ export const moenchScenarios: Scenario[] = [
     chapter: 5,
     title: 'Der neue Abt',
     description: 'Der alte Abt ist gestorben und die Mönche müssen einen neuen Abt wählen. Zu deiner Überraschung wirst du als Kandidat vorgeschlagen! Die Verantwortung wäre enorm—du würdest das ganze Kloster leiten. Aber auch andere Kandidaten stehen bereit.',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Kloster_Maulbronn_von_Nordosten_%28Foto_Hilarmont%29.JPG/400px-Kloster_Maulbronn_von_Nordosten_%28Foto_Hilarmont%29.JPG',
     choices: [
       {
         text: 'Du nimmst die Kandidatur an und versprichst, das Kloster zu reformieren.',

@@ -7,7 +7,6 @@ export const ritterScenarios: Scenario[] = [
     chapter: 1,
     title: 'Das erste Turnier',
     description: 'Du bist soeben zum Ritter geschlagen worden und nimmst an deinem ersten Turnier teil! Hunderte Zuschauer sind gekommen. Der Herold ruft deinen Namen. Dein Pferd ist nervös, deine Rüstung glänzt. Du reitest gegen einen erfahrenen Ritter. Wie bereitest du dich vor?',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Codex_Manesse_%28765%29_Walther_von_Klingen.jpg/300px-Codex_Manesse_%28765%29_Walther_von_Klingen.jpg',
     choices: [
       {
         text: 'Du konzentrierst dich und reitest mit voller Kraft auf deinen Gegner zu.',
@@ -49,7 +48,6 @@ export const ritterScenarios: Scenario[] = [
     chapter: 2,
     title: 'Der Lehnseid',
     description: 'Dein Lehnsherr, Graf Heinrich, ruft dich zu sich auf die Burg. Er will dir ein kleines Lehen geben—ein Stück Land mit einem Dorf und einigen Bauern. Dafür musst du ihm den Lehnseid schwören: Treue und Dienst im Krieg. Es ist eine große Ehre, aber auch eine große Verpflichtung.',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Codex_Manesse_Rudolf_von_Ems.jpg/300px-Codex_Manesse_Rudolf_von_Ems.jpg',
     choices: [
       {
         text: 'Du schwörst den Eid feierlich und nimmst das Lehen an.',
@@ -91,7 +89,6 @@ export const ritterScenarios: Scenario[] = [
     chapter: 3,
     title: 'Der Kreuzzugsaufruf',
     description: 'Ein Prediger kommt ins Dorf und ruft zum Kreuzzug auf! Er verspricht Vergebung aller Sünden und Ruhm für jeden Ritter, der ins Heilige Land zieht. Viele Ritter bereiten sich schon auf die Reise vor. Dein Lehnsherr fragt, ob du mitziehst.',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/BnF_ms._12559%2C_fol._1_-_Pr%C3%A9dication_de_la_Croisade.jpg/300px-BnF_ms._12559%2C_fol._1_-_Pr%C3%A9dication_de_la_Croisade.jpg',
     choices: [
       {
         text: 'Du ziehst in den Kreuzzug—für Gott und Ehre!',
@@ -132,7 +129,6 @@ export const ritterScenarios: Scenario[] = [
     chapter: 4,
     title: 'Gerechtigkeit im Dorf',
     description: 'Als Lehnsherr musst du auch Richter sein. Zwei Bauern streiten sich: Der eine sagt, der andere hat seinen Zaun verschoben und einen Teil seines Feldes gestohlen. Beide haben Zeugen, die ihre Version bestätigen. Wie urteilst du?',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Sachsenspiegel_Landrecht_I_3_2.jpg/300px-Sachsenspiegel_Landrecht_I_3_2.jpg',
     choices: [
       {
         text: 'Du misst die Felder selbst nach und suchst die alten Grenzsteine.',
@@ -174,7 +170,6 @@ export const ritterScenarios: Scenario[] = [
     chapter: 5,
     title: 'Das Vermächtnis des Ritters',
     description: 'Die Jahre sind vergangen. Du bist ein erfahrener Ritter mit Land und Ansehen. Dein Sohn ist nun alt genug, um deine Nachfolge anzutreten. Aber wie willst du in Erinnerung bleiben? Wie soll dein Vermächtnis aussehen?',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Codex_Manesse_Werner_von_Teufen.jpg/300px-Codex_Manesse_Werner_von_Teufen.jpg',
     choices: [
       {
         text: 'Du lässt eine Kapelle bauen—zu Ehren Gottes und deiner Familie.',

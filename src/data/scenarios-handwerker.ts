@@ -7,7 +7,6 @@ export const handwerkerScenarios: Scenario[] = [
     chapter: 1,
     title: 'Die Zunftversammlung',
     description: 'Du bist Geselle in der Werkstatt eines Schuhmacher-Meisters in einer großen Stadt. Heute findet eine wichtige Zunftversammlung statt. Die Zunft der Schuhmacher muss entscheiden: Sollen fremde Handwerker aus einer anderen Stadt in eurer Zunft arbeiten dürfen? Die Meinungen sind gespalten.',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Mendel_I_015_v.jpg/300px-Mendel_I_015_v.jpg',
     choices: [
       {
         text: 'Du sprichst dich für die Aufnahme der fremden Handwerker aus. Neue Ideen sind gut!',
@@ -49,7 +48,6 @@ export const handwerkerScenarios: Scenario[] = [
     chapter: 2,
     title: 'Das Meisterstück',
     description: 'Die Zeit ist gekommen: Du willst Meister werden! Dafür musst du ein Meisterstück anfertigen—ein perfektes Paar Schuhe, das die strengen Prüfer der Zunft überzeugen muss. Du hast drei Wochen Zeit. Wie gehst du vor?',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Mendel_I_074_v.jpg/300px-Mendel_I_074_v.jpg',
     choices: [
       {
         text: 'Du arbeitest Tag und Nacht und verwendest das beste Leder, das du finden kannst.',
@@ -91,7 +89,6 @@ export const handwerkerScenarios: Scenario[] = [
     chapter: 3,
     title: 'Feuer in der Stadt',
     description: 'Mitten in der Nacht bricht ein Feuer in der Nachbarstraße aus! Die Flammen breiten sich schnell über die Holzhäuser aus. Deine Werkstatt ist in Gefahr. Die Stadtbewohner bilden Löschketten mit Eimern Wasser aus dem Brunnen. Was tust du?',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Nuremberg_chronicles_-_Burning_of_the_Jews_%28CCXXIIIv%29.jpg/300px-Nuremberg_chronicles_-_Burning_of_the_Jews_%28CCXXIIIv%29.jpg',
     choices: [
       {
         text: 'Du rettest zuerst deine Werkzeuge und Materialien aus der Werkstatt.',
@@ -133,7 +130,6 @@ export const handwerkerScenarios: Scenario[] = [
     chapter: 4,
     title: 'Der Auftrag des Bischofs',
     description: 'Ein Bote kommt in deine Werkstatt: Der Bischof der Stadt braucht neue Schuhe für eine wichtige Zeremonie! Es ist eine große Ehre, aber auch viel Druck. Der Bischof ist mächtig und anspruchsvoll. Wie gehst du mit diesem wichtigen Auftrag um?',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Meister_der_Manessischen_Liederhandschrift_004.jpg/300px-Meister_der_Manessischen_Liederhandschrift_004.jpg',
     choices: [
       {
         text: 'Du verwendest das teuerste Material und arbeitest besonders sorgfältig.',
@@ -175,7 +171,6 @@ export const handwerkerScenarios: Scenario[] = [
     chapter: 5,
     title: 'Die eigene Werkstatt',
     description: 'Du bist jetzt Meister und kannst endlich deine eigene Werkstatt eröffnen! Aber wo? Die Zunft hat bestimmte Regeln, welche Straße für dein Handwerk bestimmt ist. Du musst auch Lehrlinge finden und Material einkaufen. Eine große und aufregende Zeit beginnt!',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Mendel_I_029_v.jpg/300px-Mendel_I_029_v.jpg',
     choices: [
       {
         text: 'Du eröffnest eine kleine, aber feine Werkstatt in der Schuhmacherstraße.',
