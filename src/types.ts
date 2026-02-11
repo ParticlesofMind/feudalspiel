@@ -83,4 +83,4 @@ export interface DecisionRecord {
   chapter: number;
 }
 
-export type Page = 'intro' | 'roleSelect' | 'nameEntry' | 'scenario' | 'profile' | 'glossary' | 'summary';
+export type Page = 'intro' | 'roleSelect' | 'nameEntry' | 'scenario' | 'profile' | 'glossary' | 'summary' | 'leaderboard';

@@ -2,6 +2,7 @@ import { getState, navigateTo, resetGame } from '../store';
 import { getRoleById } from '../data/roles';
 import { getAchievementById } from '../data/achievements';
 import { Stats } from '../types';
+import { submitScore } from '../utils/supabase';
 
 export function renderSummaryPage(): string {
   const { profile } = getState();
@@ -90,7 +91,19 @@ export function renderSummaryPage(): string {
           <hr class="medieval-divider"/>
 
           <!-- Actions -->
+          <!-- Submit Score -->
+          <div id="submit-section" class="my-6">
+            <button id="btn-submit-score" class="btn-primary text-lg w-full">
+              🏆 Ergebnis speichern & Rangliste ansehen
+            </button>
+            <p id="submit-status" class="text-sm text-stone mt-2 text-center"></p>
+          </div>
+
           <div class="space-y-3 mt-6">
+            <button id="btn-leaderboard" class="btn-primary" style="background: linear-gradient(180deg, var(--color-gold-dark), var(--color-gold));">
+              🏆 Rangliste ansehen
+            </button>
+            <br/>
             <button id="btn-view-profile" class="btn-primary">
               📋 Vollständiges Profil ansehen
             </button>
@@ -180,11 +193,55 @@ function getTitle(stats: Stats, roleId: string): string {
 }
 
 export function attachSummaryListeners() {
+  const { profile } = getState();
+  
   document.getElementById('btn-view-profile')?.addEventListener('click', () => navigateTo('profile'));
   document.getElementById('btn-view-glossary')?.addEventListener('click', () => navigateTo('glossary'));
+  document.getElementById('btn-leaderboard')?.addEventListener('click', () => navigateTo('leaderboard'));
   document.getElementById('btn-new-game')?.addEventListener('click', () => {
     if (confirm('Möchtest du wirklich ein neues Spiel starten? Dein Fortschritt wird gelöscht.')) {
       resetGame();
+    }
+  });
+
+  // Submit score
+  document.getElementById('btn-submit-score')?.addEventListener('click', async () => {
+    if (!profile) return;
+    const btn = document.getElementById('btn-submit-score') as HTMLButtonElement;
+    const status = document.getElementById('submit-status')!;
+    
+    btn.disabled = true;
+    btn.textContent = '⏳ Wird gespeichert...';
+    
+    const role = getRoleById(profile.roleId);
+    const totalStats = Object.values(profile.stats).reduce((a, b) => a + b, 0);
+    const title = getTitle(profile.stats, profile.roleId);
+    
+    const success = await submitScore({
+      player_name: profile.name,
+      role_id: profile.roleId,
+      role_name: role?.name || profile.roleId,
+      total_score: totalStats,
+      ansehen: profile.stats.ansehen,
+      wohlstand: profile.stats.wohlstand,
+      wissen: profile.stats.wissen,
+      geschick: profile.stats.geschick,
+      glaube: profile.stats.glaube,
+      title,
+      achievements_count: profile.achievements.length,
+      vocabulary_count: profile.vocabulary.length,
+    });
+    
+    if (success) {
+      status.textContent = '✅ Gespeichert!';
+      status.style.color = 'var(--color-forest)';
+      btn.textContent = '✅ Gespeichert!';
+      setTimeout(() => navigateTo('leaderboard'), 1000);
+    } else {
+      status.textContent = '❌ Fehler – bitte versuche es nochmal.';
+      status.style.color = 'var(--color-crimson)';
+      btn.disabled = false;
+      btn.textContent = '🏆 Nochmal versuchen';
     }
   });
 }

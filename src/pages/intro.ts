@@ -77,7 +77,7 @@ export function renderIntroPage(): string {
           <div class="medieval-card p-4 text-center animate-fadeIn" style="animation-delay: 0.4s">
             <div class="text-3xl mb-2">📖</div>
             <h3 class="font-heading text-sm uppercase tracking-wider mb-1">Sprache</h3>
-            <p class="text-sm text-ink-light">Alle Texte sind auf Deutsch—perfekt für B1-Lerner!</p>
+            <p class="text-sm text-ink-light">Alle Texte sind auf Deutsch—perfekt für A2+-Lerner!</p>
           </div>
           <div class="medieval-card p-4 text-center animate-fadeIn" style="animation-delay: 0.5s">
             <div class="text-3xl mb-2">🎭</div>

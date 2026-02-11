@@ -6,6 +6,7 @@ import { renderScenarioPage, attachScenarioListeners } from './pages/scenario';
 import { renderProfilePage, attachProfileListeners } from './pages/profile';
 import { renderGlossaryPage, attachGlossaryListeners } from './pages/glossary';
 import { renderSummaryPage, attachSummaryListeners } from './pages/summary';
+import { renderLeaderboardPage, attachLeaderboardListeners } from './pages/leaderboard';
 
 const app = document.getElementById('app')!;
 
@@ -39,6 +40,10 @@ function render() {
     case 'summary':
       html = renderSummaryPage();
       attach = attachSummaryListeners;
+      break;
+    case 'leaderboard':
+      html = renderLeaderboardPage();
+      attach = attachLeaderboardListeners;
       break;
   }
 
